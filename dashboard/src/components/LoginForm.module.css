@@ -1,0 +1,55 @@
+.login {
+  background-image: url("../assets/logo.jpg"), url("../assets/background.jpg");
+  background-color: #cccccc;
+  height: 800px;
+  background-position: left top, center;
+  background-repeat: no-repeat;
+  background-size: 200px, cover;
+  position: relative;
+}
+
+.loginBox {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50rem;
+}
+
+.form {
+  max-width: 50rem;
+  margin: 3rem auto;
+  border: 1px solid black;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.actions button {
+  cursor: pointer;
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 4px;
+  background-color: var(--color-gray-300);
+  border: 1px solid black;
+}
+
+.actions button[type='button'] {
+  background-color: transparent;
+}
+
+.actions button:hover {
+  background-color: var(--color-primary-300);
+}
+
+.actions button[type='button']:hover {
+  background-color: var(--color-gray-800);
+}
+
+h1 {
+  color: green;
+}
