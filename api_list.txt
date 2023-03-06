@@ -1,0 +1,17 @@
+API List 
+
+post /login  > login api
+// Api to login with email and password
+Request body { email: string, password: string } 
+
+post /login/forget > forget password api
+// Api to reset password
+Request body { email: string } 
+
+post /overview 
+// Api to get data for overview chart.
+Request body {period:string}
+
+post /overview/total 
+//Api to get total results data base on the days pass in.
+Request body {days:number}
