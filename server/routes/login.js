@@ -23,7 +23,7 @@ router.post('/', (request, response, next) => {
             });
         });
 });
-router.get('/forget', (request, response, next) => {
+router.post('/forget', (request, response, next) => {
 
     response.json({ status: 200 });
 });
