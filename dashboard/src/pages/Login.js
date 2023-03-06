@@ -15,7 +15,7 @@ function LoginPage() {
         if (!inputs.email) {
             alert('Please fill in the email.')
         } else {
-            const res = await axios.get('http://localhost:4000/login/forget', { inputs },
+            const res = await axios.post('http://localhost:4000/login/forget', { inputs },
                 { headers: { 'Authorization': `Bearer ${sessionStorage.getItem('token')}` } }
             )
             if (res.data.status === 200) {
